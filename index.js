@@ -34,6 +34,6 @@ app.get("/deposit", (req, res, next) => {
     res.status(400).json({})
 });
    
-app.listen(3000, () => {
+app.listen(8080, () => {
  console.log("Server running on port 3000");
 });

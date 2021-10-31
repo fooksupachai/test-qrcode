@@ -22,11 +22,16 @@ const deposit = async () => {
         data: deposit,
     };
 
+    try {
+        await web3MetaMask.eth.sendTransaction(depositOption);
+    } catch (err) {
+
+    }
 }
 
-app.get("/url", (req, res, next) => {
+app.get("/deposit", (req, res, next) => {
     console.log("do")
-    res.status(404).json({})
+    res.status(400).json({})
 });
    
 app.listen(3000, () => {

@@ -31,7 +31,7 @@ const deposit = async () => {
 
 app.get("/deposit", (req, res, next) => {
     console.log("do")
-    res.status(400).json({})
+    res.status(200).json({})
 });
    
 app.listen(8080, () => {
